@@ -7,9 +7,8 @@ public class Main {
         Dog dog2 = new Dog("1", 5);
         Dog dog3 = new Dog("2", 2);
         NurseryDog nDog = new NurseryDog();
-        nDog.AddDog(dog1);
+        nDog.AddDog(dog1, dog2);
         nDog.AddDog(dog2);
         nDog.AddDog(dog3);
     }
 }
-

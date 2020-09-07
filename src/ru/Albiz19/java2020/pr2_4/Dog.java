@@ -3,12 +3,10 @@ package ru.Albiz19.java2020.pr2_4;
 public class Dog {
     String m_name;
     int m_age;
-
     Dog(String name, int years) {
         SetName(name);
         SetAge(years);
     }
-
     public void SetName(String name)
     {
         m_name = name;

@@ -1,6 +1,4 @@
-package ru.Albiz19.java2020.ex1;
-
-import java.util.Random;
+package ru.Albiz19.java2020.ex1_1;
 
 public class Main {
 
@@ -8,12 +6,12 @@ public class Main {
         System.out.println(num3());
     }
     public static int num3() {
-            int[] array = {100, 15, 12, 102, 156, 1000, 1, 0};
-            int s=0;
-            //реализация на for
-            for (int i = 0; i < array.length; i++) {
-                s = s + array[i];
-            }
+        int[] array = {100, 15, 12, 102, 156, 1000, 1, 0};
+        int s=0;
+        //реализация на for
+        for (int i = 0; i < array.length; i++) {
+            s = s + array[i];
+        }
 
         /* // реализация на while
         int i=0;
@@ -32,7 +30,7 @@ public class Main {
         }
         while (i<array.length);
         */
-            return s;
-        }
+        return s;
+    }
 }
 

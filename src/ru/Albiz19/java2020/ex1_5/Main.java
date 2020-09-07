@@ -1,10 +1,9 @@
-package ru.Albiz19.java2020.ex5;
+package ru.Albiz19.java2020.ex1_5;
 
-public class Main {
-    public static void main(String[] args)
+public class Main{
+    public static void Main(String[] args)
     {
         int n=10; //факториал 10 = 3628800
-
         System.out.println(factmeth(n));
     }
     public static int factmeth(int n)

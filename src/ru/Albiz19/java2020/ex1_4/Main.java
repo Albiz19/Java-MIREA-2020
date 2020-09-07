@@ -1,4 +1,4 @@
-package ru.Albiz19.java2020.ex4;
+package ru.Albiz19.java2020.ex1_4;
 
 import java.util.Random;
 

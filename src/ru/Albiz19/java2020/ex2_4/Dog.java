@@ -1,4 +1,4 @@
-package ru.Albiz19.java2020.pr2_4;
+package ru.Albiz19.java2020.ex2_4;
 
 public class Dog {
     String m_name;
@@ -36,3 +36,4 @@ public class Dog {
                 '}';
     }
 }
+

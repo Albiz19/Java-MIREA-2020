@@ -1,4 +1,4 @@
-package ru.Albiz19.java2020.ex3_3;
+package ru.Albiz19.java2020.pr3.ex3_3;
 
 public class Book {
     private String author;

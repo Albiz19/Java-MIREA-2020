@@ -1,4 +1,4 @@
-package ru.Albiz19.java2020.ex2_4;
+package ru.Albiz19.java2020.pr2.ex2_4;
 
 public class NurseryDog {
     Dog[] m_dogs = new Dog[5];

@@ -1,4 +1,4 @@
-package ru.Albiz19.java2020.ex1_5;
+package ru.Albiz19.java2020.pr1.ex1_5;
 
 public class Main{
     public static void Main(String[] args)

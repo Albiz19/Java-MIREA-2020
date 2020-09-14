@@ -1,4 +1,4 @@
-package ru.Albiz19.java2020.ex3_1;
+package ru.Albiz19.java2020.pr3.ex3_1;
 
 public class CircleTest {
     public static void main(String[] args){

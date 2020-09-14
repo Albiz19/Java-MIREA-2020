@@ -1,6 +1,5 @@
-package ru.Albiz19.java2020.ex2_4;
-import ru.Albiz19.java2020.ex2_4.Dog;
-import ru.Albiz19.java2020.ex2_4.NurseryDog;
+package ru.Albiz19.java2020.pr2.ex2_4;
+
 public class main {
     public static void main(String[] args)
     {

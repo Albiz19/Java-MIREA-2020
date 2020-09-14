@@ -1,11 +1,11 @@
-package ru.Albiz19.java2020.ex3_2;
+package ru.Albiz19.java2020.pr3.ex3_2;
 
-public class Leg {
-    private int leng;
+public class Head {
+    private int volume;
     private int weig;
     private int size;
-    Leg(int l, int w, int s){
-        setLeng(l);
+    Head(int v, int w, int s){
+        setVol(v);
         setWeig(w);
         setSize(s);
     }
@@ -13,15 +13,15 @@ public class Leg {
     {
         this.size = s;
     }
-    public void setLeng(int l) {
-        this.leng = l;
+    public void setVol(int v) {
+        this.volume = v;
     }
     public void setWeig(int w){
         this.weig = w;
     }
-    public int GetLeng()
+    public int GetVol()
     {
-        return this.leng;
+        return this.volume;
     }
     public int GetWeig()
     {

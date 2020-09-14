@@ -3,22 +3,25 @@ package ru.Albiz19.java2020.pr3.ex3_2;
 public class Hand {
     private int leng;
     private int weig;
-    Hand(int l, int w){
-        setLeng(l);
-        setWeig(w);
+
+    public void setLeng(int leng) {
+        this.leng = leng;
     }
-    public void setLeng(int l) {
-        this.leng = l;
+
+    public void setWeig(int weig) {
+        this.weig = weig;
     }
-    public void setWeig(int w){
-        this.weig = w;
+
+    public int getLeng() {
+        return leng;
     }
-    public int GetLeng()
-    {
-        return this.leng;
+
+    public int getWeig() {
+        return weig;
     }
-    public int GetWeig()
-    {
-        return this.weig;
+
+    public Hand(int leng, int weig) {
+        this.leng = leng;
+        this.weig = weig;
     }
 }

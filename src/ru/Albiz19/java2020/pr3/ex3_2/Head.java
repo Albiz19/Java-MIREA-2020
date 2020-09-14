@@ -4,31 +4,34 @@ public class Head {
     private int volume;
     private int weig;
     private int size;
-    Head(int v, int w, int s){
-        setVol(v);
-        setWeig(w);
-        setSize(s);
+
+    public void setVolume(int volume) {
+        this.volume = volume;
     }
-    public void setSize(int s)
-    {
-        this.size = s;
+
+    public void setWeig(int weig) {
+        this.weig = weig;
     }
-    public void setVol(int v) {
-        this.volume = v;
+
+    public void setSize(int size) {
+        this.size = size;
     }
-    public void setWeig(int w){
-        this.weig = w;
+
+    public int getVolume() {
+        return volume;
     }
-    public int GetVol()
-    {
-        return this.volume;
+
+    public int getWeig() {
+        return weig;
     }
-    public int GetWeig()
-    {
-        return this.weig;
+
+    public int getSize() {
+        return size;
     }
-    public int GetSize()
-    {
-        return this.size;
+
+    public Head(int volume, int weig, int size) {
+        this.volume = volume;
+        this.weig = weig;
+        this.size = size;
     }
 }

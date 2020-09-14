@@ -4,31 +4,34 @@ public class Leg {
     private int leng;
     private int weig;
     private int size;
-    Leg(int l, int w, int s){
-        setLeng(l);
-        setWeig(w);
-        setSize(s);
+
+    public int getLeng() {
+        return leng;
     }
-    public void setSize(int s)
-    {
-        this.size = s;
+
+    public void setLeng(int leng) {
+        this.leng = leng;
     }
-    public void setLeng(int l) {
-        this.leng = l;
+
+    public int getWeig() {
+        return weig;
     }
-    public void setWeig(int w){
-        this.weig = w;
+
+    public void setWeig(int weig) {
+        this.weig = weig;
     }
-    public int GetLeng()
-    {
-        return this.leng;
+
+    public int getSize() {
+        return size;
     }
-    public int GetWeig()
-    {
-        return this.weig;
+
+    public void setSize(int size) {
+        this.size = size;
     }
-    public int GetSize()
-    {
-        return this.size;
+
+    public Leg(int leng, int weig, int size) {
+        this.leng = leng;
+        this.weig = weig;
+        this.size = size;
     }
 }

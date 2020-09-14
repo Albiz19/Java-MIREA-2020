@@ -3,20 +3,24 @@ package ru.Albiz19.java2020.pr4.ex4_1;
 public class Circle extends Shape{
     protected double radius;
     Circle() {};
-    Circle (double radius){
-        setRadius(radius);
-    }
-    Circle (double radius, String color, boolean filled){
-        setColor(color);
-        setRadius(radius);
-        setFilled(filled);
-    }
-    public void setRadius(double radius){
+
+    public Circle(double radius) {
         this.radius = radius;
     }
-    public double getRadius() {
-        return this.radius;
+
+    public Circle(String color, boolean filled, double radius) {
+        super(color, filled);
+        this.radius = radius;
     }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
     @Override
     public double getArea()
     {
@@ -27,8 +31,13 @@ public class Circle extends Shape{
     {
         return 2*3.14*radius;
     }
+
     @Override
     public String toString() {
-        return "Shape: circle, radius: "+this.radius+", color: "+this.color;
+        return "Circle{" +
+                "radius=" + radius +
+                ", color='" + color + '\'' +
+                ", filled=" + filled +
+                '}';
     }
 }

@@ -3,20 +3,25 @@ package ru.Albiz19.java2020.pr4.ex4_1;
 public class Square extends Rectangle{
     protected double side;
     Square(){};
-    Square(double side){
-        setSide(side);
+
+    public Square(String color, boolean filled, double side) {
+        this.color = color;
+        this.filled = filled;
+        this.side = side;
     }
-    Square(double side, String color, boolean filled){
-        setSide(side);
-        setColor(color);
-        setFilled(filled);
+
+    public Square(double side) {
+        this.side = side;
     }
-    public void setSide(double side){
-        this.side=side;
+
+    public double getSide() {
+        return side;
     }
-    public double getSide(){
-        return this.side;
+
+    public void setSide(double side) {
+        this.side = side;
     }
+
     @Override
     public double getArea()
     {
@@ -27,8 +32,13 @@ public class Square extends Rectangle{
     {
         return 4*side;
     }
+
     @Override
     public String toString() {
-        return "Shape: square, side: "+this.side+", color: "+this.color;
+        return "Square{" +
+                "side=" + side +
+                ", color='" + color + '\'' +
+                ", filled=" + filled +
+                '}';
     }
 }

@@ -21,4 +21,14 @@ public class Doberman extends Dog{
     public void Trained(boolean istrained){
         this.isTrained = istrained;
     }
+
+    @Override
+    public String toString() {
+        return "Doberman{" +
+                "isTrained=" + isTrained +
+                ", age=" + age +
+                ", name='" + name + '\'' +
+                ", height=" + height +
+                '}';
+    }
 }

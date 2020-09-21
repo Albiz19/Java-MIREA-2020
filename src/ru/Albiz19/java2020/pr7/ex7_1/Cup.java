@@ -10,6 +10,16 @@ public class Cup extends Dish {
         return volume;
     }
 
+    @Override
+    public String toString() {
+        return "Cup{" +
+                "volume=" + volume +
+                ", material='" + material + '\'' +
+                ", price=" + price +
+                ", isBroken=" + isBroken +
+                '}';
+    }
+
     public void setVolume(int volume) {
         this.volume = volume;
     }

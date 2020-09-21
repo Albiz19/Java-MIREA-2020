@@ -15,6 +15,17 @@ public class Pug extends Dog {
         super(age, name, height);
         this.color = color;
     }
+
+    @Override
+    public String toString() {
+        return "Pug{" +
+                "color='" + color + '\'' +
+                ", age=" + age +
+                ", name='" + name + '\'' +
+                ", height=" + height +
+                '}';
+    }
+
     public int HumanAge(){
         return this.age*8;
     }

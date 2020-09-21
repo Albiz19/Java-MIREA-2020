@@ -14,8 +14,6 @@ public class MovableRectangle implements Movable {
         this.y = y;
     }
 
-    public MovableRectangle() {
-    };
 
     public double getWidth() {
         return width;

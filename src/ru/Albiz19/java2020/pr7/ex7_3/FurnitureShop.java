@@ -1,6 +1,6 @@
 package ru.Albiz19.java2020.pr7.ex7_3;
 
-public abstract class FurnitureShop {
+public class FurnitureShop {
     protected int price;
 
     public int getPrice() {

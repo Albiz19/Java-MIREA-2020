@@ -8,6 +8,17 @@ public class Plate extends Dish{
         return radius;
     }
 
+    @Override
+    public String toString() {
+        return "Plate{" +
+                "radius=" + radius +
+                ", shape='" + shape + '\'' +
+                ", material='" + material + '\'' +
+                ", price=" + price +
+                ", isBroken=" + isBroken +
+                '}';
+    }
+
     public void setRadius(int radius) {
         this.radius = radius;
     }

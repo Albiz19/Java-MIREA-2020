@@ -2,7 +2,7 @@ package ru.Albiz19.java2020.pr10.ex10_8;
 
 public class main {
     public static void main(String []args){
-        String s = "Алла";
+        String s = "алла";
         if(isPalindrome(s)){
             System.out.println("YES");
         }

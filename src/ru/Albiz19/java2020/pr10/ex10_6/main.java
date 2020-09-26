@@ -1,21 +1,24 @@
 package ru.Albiz19.java2020.pr10.ex10_6;
 
 public class main {
-    public static void main(String []args){
-        int n=100, temp;
-        boolean isPr = true;
-        for (int i=2;i<n/2;i++){
-            temp=n&i;
-            if (temp==0){
-                isPr=false;
-                break;
-            }
+    public static boolean recursion(int n, int i) {
+        // i- дополнительный параметр. При вызове должен быть равен 2
+        if (n < 2) {
+            return false;
         }
-        if (isPr) {
-            System.out.println("YES");
+        else if (n == 2) {
+            return true;
         }
-        else {
-            System.out.println("NO");
+        else if (n % i == 0) {
+            return false;
         }
+        else if (i < n / 2) {
+            return recursion(n, i + 1);
+        } else {
+            return true;
+        }
+    }
+    public static void main(String[] args) {
+        System.out.println(recursion(18, 2));
     }
 }

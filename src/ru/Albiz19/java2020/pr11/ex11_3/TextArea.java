@@ -11,21 +11,9 @@ public class TextArea extends JFrame
     {
         super("Пример JTextArea");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-
-
-        // Cоздание многострочных полей
-        /*JTextArea area1 = new JTextArea("Многострочное поле", 8, 10);
-        // Шрифт и табуляция
-        area1.setFont(new Font("Dialog", Font.PLAIN, 14));
-        area1.setTabSize(10);
-
-
-         */
         JMenuBar menuBar = new JMenuBar();
         menuBar.add(createViewManu());
         setJMenuBar(menuBar);
-
-
     }
     public static void main(String[] args) {
         new TextArea();

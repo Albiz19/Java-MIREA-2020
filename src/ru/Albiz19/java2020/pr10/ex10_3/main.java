@@ -1,18 +1,22 @@
 package ru.Albiz19.java2020.pr10.ex10_3;
 
 public class main {
-    public static void main(String []args){
-        char first = 'a';
-        char second = 'c';
-        if (first<second) {
-            for (char i = first; i <= second; i++) {
-                System.out.print(i + " ");
+    public static int recursion(int len, int sum, int k, int s) {
+        if (len == k) {
+            if (sum == s) {
+                return 1;
+            } else {
+                return 0;
             }
         }
-        else {
-            for (char i = first; i >= second; i--) {
-                System.out.print(i + " ");
-            }
+        int c = (len == 0 ? 1 : 0);
+        int res = 0;
+        for (int i = c; i < 10; i++) {
+            res += recursion(len + 1, sum + i, k, s);
         }
+        return res;
+    }
+    public static void main(String[] args) {
+        System.out.println(recursion(0, 0, 3, 15));
     }
 }

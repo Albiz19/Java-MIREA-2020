@@ -1,27 +1,22 @@
 package ru.Albiz19.java2020.pr10.ex10_4;
 
 public class main {
-    public static void main(String []args){
-        double s=5;
-        double k=3;
-        double j=Math.pow(10.0, k-1.0);
-        int buff=0,buff1;
-        int u=0;
-        double k1 =Math.pow(10.0, k);
-        for (int i=(int) j; i<k1; i++){
-            buff1=i;
-            while (buff1!=0){
-                buff= (int) (buff+(buff1%(10)));
-                buff1=(int) (buff1/(10));
+    public static int recursion(int len, int sum, int k, int s) {
+        if (len == k) {
+            if (sum == s) {
+                return 1;
+            } else {
+                return 0;
             }
-            //System.out.println(buff);
-            if (buff==s){
-                u++;
-            }
-            buff=0;
-            //double buff=(i/(Math.pow(10, 1)))+(i/(Math.pow(10,k)))
-            //if (
         }
-        System.out.print(u);
+        int c = (len == 0 ? 1 : 0);
+        int res = 0;
+        for (int i = c; i < 10; i++) {
+            res += recursion(len + 1, sum + i, k, s);
+        }
+        return res;
+    }
+    public static void main(String[] args) {
+        System.out.println(recursion(0, 0, 3, 15));
     }
 }

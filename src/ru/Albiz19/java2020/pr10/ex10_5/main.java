@@ -1,33 +1,15 @@
 package ru.Albiz19.java2020.pr10.ex10_5;
 
 public class main {
-    public static void main(String []args){
-        int n=1010;
-        int s=0;
-        s += n % 10;
-        n /= 10;
-        s += n % 10;
-        n /= 10;
-        s += n % 10;
-        n /= 10;
-        s += n % 10;
-        n /= 10;
-        s += n % 10;
-        n /= 10;
-        s += n % 10;
-        n /= 10;
-        s += n % 10;
-        n /= 10;
-        s += n % 10;
-        n /= 10;
-        s += n % 10;
-        n /= 10;
-        /*
-        while (n!=0){
-            s += n%10;
-            n /= 10;
+    public static int recursion(int n) {
+        if (n < 10) {
+            return n;
         }
-        */
-        System.out.print(s);
+        else {
+            return n % 10 + recursion(n / 10);
+        }
+    }
+    public static void main(String[] args) {
+        System.out.println(recursion(123));
     }
 }

@@ -25,10 +25,8 @@ public class TextArea extends JFrame
         // Параметры переноса слов
         area2.setLineWrap(true);
         area2.setWrapStyleWord(true);
-
-        // Добавим поля в окно
+        // поля в окно
         JPanel contents = new JPanel();
-        //contents.add(new JScrollPane(area1));
         contents.add(new JScrollPane(area2));
         setContentPane(contents);
 
@@ -90,13 +88,10 @@ public class TextArea extends JFrame
         viewMenu.add(blue);
         viewMenu.add(red);
         viewMenu.add(black);
-        // разделитель можно создать и явно
         viewMenu.add( new JSeparator());
         viewMenu.add(roman);
         viewMenu.add(ms);
         viewMenu.add(cour);
-
-        // Выводим окно на экран
         setSize(400, 300);
         setVisible(true);
 

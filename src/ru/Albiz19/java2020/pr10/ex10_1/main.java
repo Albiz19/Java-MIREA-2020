@@ -16,6 +16,6 @@ public class main {
         return "";
     }
     public static void main(String[] args) {
-        recursion(5);
+        recursion(6);
     }
 }

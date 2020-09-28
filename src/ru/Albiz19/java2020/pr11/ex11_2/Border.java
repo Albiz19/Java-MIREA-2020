@@ -2,7 +2,6 @@ package ru.Albiz19.java2020.pr11.ex11_2;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 

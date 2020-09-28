@@ -8,8 +8,6 @@ import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 
-import java.awt.event.MouseEvent;
-
 public class AppF extends Application {
     public static void main(String[] args) {
         launch(args);

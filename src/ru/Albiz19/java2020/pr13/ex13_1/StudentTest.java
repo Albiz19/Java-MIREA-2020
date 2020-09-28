@@ -28,6 +28,14 @@ class StudentTest {
 }
 class Student {
     private String name;
+    private int age;
+    private int iDNumber;
+
+    public Student(String name, int age, int iDNumber) {
+        this.name = name;
+        this.age = age;
+        this.iDNumber = iDNumber;
+    }
 
     @Override
     public String toString() {
@@ -37,9 +45,6 @@ class Student {
                 ", iDNumber=" + iDNumber +
                 '}';
     }
-
-    private int age;
-    private int iDNumber;
 
     public String getName() {
         return name;
@@ -68,9 +73,5 @@ class Student {
         if (student.getiDNumber() < iDNumber) return true;
         else return false;
     }
-    public Student(String name, int age, int iDNumber) {
-        this.name = name;
-        this.age = age;
-        this.iDNumber = iDNumber;
-    }
+
 }

@@ -1,28 +1,23 @@
 package ru.Albiz19.java2020.pr13.ex13_2;
 
-import java.util.Arrays;
-
 public class SortingStudentsByGPA implements Comparator {
-    public void sort(Student[] students){
-        //mergeSort(students);
-        int low = 0;
-        int high = students.length - 1;
-        quickSort(students,low,high);
+    public void sort(Student[] students) {
+        //mergeSort(students); //сортировка слиянием
+        int low = 0; //доп. параметры для быстрой сорт.
+        int high = students.length - 1; //доп. параметры для быстрой сорт.
+        quickSort(students,low,high); //быстрая сортировка
         for(Student student : students){
             System.out.println(student.toString());
         }
     }
-
+    //Быстрая сортировка
     public void quickSort(Student[] array, int low, int high) {
         if (array.length == 0)
             return;//завершить выполнение если длина массива равна 0
-
         if (low >= high)
             return;//завершить выполнение если уже нечего делить
-
         int middle = low + (high - low) / 2;
         Student opora = array[middle];
-
         int i = low, j = high;
         while (i <= j) {
             while (array[i].getGpa() > opora.getGpa()) {
@@ -48,6 +43,7 @@ public class SortingStudentsByGPA implements Comparator {
             quickSort(array, i, high);
     }
     /*
+    //сортировка слиянием
     public static void mergeSort(Student[] array) {
         if (array.length > 1) {
             Student[] left = leftHalf(array);
@@ -93,6 +89,5 @@ public class SortingStudentsByGPA implements Comparator {
             }
         }
     }
-
      */
 }

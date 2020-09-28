@@ -1,8 +1,6 @@
 package ru.Albiz19.java2020.pr13.ex13_3;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class MergeLists {
     Student[] studentsm = {
@@ -21,6 +19,12 @@ public class MergeLists {
         List <Student> list_of_res = new ArrayList<Student>();
         list_of_res.addAll(list_of_studm);
         list_of_res.addAll(list_of_studmf);
+        Collections.sort(list_of_res, new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                return o1.getName().compareTo(o2.getName());
+            }
+        });
         System.out.println(list_of_res.toString());
     }
 }

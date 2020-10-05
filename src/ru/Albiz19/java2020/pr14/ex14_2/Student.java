@@ -1,7 +1,5 @@
 package ru.Albiz19.java2020.pr14.ex14_2;
 
-import java.util.Objects;
-
 class Student implements Comparable <Student>{
     private String name;
     private int age;

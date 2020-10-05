@@ -10,7 +10,7 @@ public class main {
         Sort srt = new Sort();
         //srt.sort();
         //srt.binarySearch();
-        Student student1 = new Student("Иванов",20,20653,3.9);
-        System.out.println(srt.recursiveBinarySearch(students, students[0].getiDNumber(), students[2].getiDNumber(),student1)+"0");
+        Student student1 = new Student("Иванов",20,20654,3.9);
+        System.out.println(srt.recursiveBinarySearch(students, students[0].getiDNumber(), students[2].getiDNumber(),student1));
     }
 }

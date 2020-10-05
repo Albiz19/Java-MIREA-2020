@@ -35,7 +35,6 @@ public class Sort {
             if (students[middleIndex] == student) {
                 return middleIndex;
             }
-
             // если средний элемент меньше
             // направляем наш индекс в middle+1, убирая первую часть из рассмотрения
             else if (students[middleIndex].getiDNumber() < student.getiDNumber())

@@ -18,6 +18,7 @@ public class main {
         map.put("g","o");
         map.put("h","o");
         map.put("j","p");
+        map.put("aa","kj");
         removeTheFirstNameDuplicates(map);
         System.out.println(map);
     }

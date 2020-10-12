@@ -5,24 +5,18 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Convers<E> {
-
     private List<E> list = new ArrayList<>();
-
-    public Convers(E[] array) {
-        list.addAll(Arrays.asList(array));
+    public Convers(E[] arr) {
+        list.addAll(Arrays.asList(arr));
     }
-
     public void showList() {
         for (Object ls : list) {
-            System.out.print(ls + " ");
+            System.out.println(ls);
         }
-        System.out.println();
     }
-
     public void add(E element) {
         list.add(element);
     }
-
     public List getList() {
         return list;
     }

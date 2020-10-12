@@ -7,7 +7,7 @@ public class DevInf {
     private String surname;
     private Date getDateOfTask;
     private Date getDateOfFinishTask;
-   public String ImputFio() {
+   public String InputFio() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your Surname ");
         surname = scanner.nextLine();

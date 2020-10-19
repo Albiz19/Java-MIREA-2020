@@ -39,7 +39,7 @@ public class Shirt {
                 "serialNumber='" + serialNumber + '\'' +
                 ", name='" + name + '\'' +
                 ", color='" + color + '\'' +
-                ", size='" + size + '\'' +
+                ", cursize='" + size + '\'' +
                 '}';
     }
 

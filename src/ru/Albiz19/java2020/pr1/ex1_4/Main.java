@@ -1,8 +1,6 @@
 package ru.Albiz19.java2020.pr1.ex1_4;
 
 import java.util.Random;
-
-
 public class Main {
     public static void main(String[] args) {
         int[] array = new int[10];
